@@ -1,0 +1,411 @@
+:root {
+    --primary:#b6895b;
+    --bg:#b6895b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--bg);
+    color: #FDF6DA;
+    height: 1500px;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(255, 245, 227,0.8);
+    border-bottom: 1px solid #523d28;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.19rem;
+    font-weight: 700;
+    color: #7F7158;
+
+}
+
+.navbar .navbar-nav a {
+    color: #7F7158;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1.15rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #7F7158;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.0001rem;
+    border-bottom: 0.1rem solid #D0B8A8;
+    transform: scaleX(0);
+    transition: 0.25s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.6);
+}
+
+.navbar .navbar-extra a {
+    color: #F8EDE3;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #D0B8A8;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../img/Untitled207_20250218101736.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: #FDF6DA;
+    line-height: 1;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.hero .content p {
+    font-size: 1.35rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 350;
+    text-align: center;
+}
+
+
+
+.hero .content .cta {
+    margin-top: 1rem;
+    padding: 0.15rem 1.5rem;
+    font-size: 1.4rem;
+    color:#F8EDE3;
+    background-color: #b6895b;
+    border-radius: 3rem;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* About Section */
+    .about,
+    .Menu,
+    .contact,
+    .products {
+        padding: 8rem 7% 1.4rem;
+    }
+
+    .about h2,
+    .Menu h2,
+    .contact h2,
+    .products h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        color: #FDF6DA;
+    }
+
+    .about .row {
+        display: flex;
+    }
+
+    .about .row .about-img {
+        flex: 1 1 45rem;
+    }
+
+    .about .row .about-img img {
+        width: 100%;
+    }
+
+    .about .row .content {
+        flex: 1 1 35rem;
+        padding: 0 1rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about .row .content p {
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    /* Menu Section*/
+    .Menu h2 {
+        margin-bottom: 1rem;
+    }
+
+    .Menu p,
+    .contact p,
+    .products p {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .Menu .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        justify-content: center;
+    }
+
+    .Menu .row .menu-card {
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .Menu .row .menu-card img {
+        border-radius: 50%;
+        width: 80%;
+        margin: 0 30px;
+    }
+
+    .Menu .row .menu-card .menu-card-title {
+        margin: 1rem auto 0.5rem;
+    }
+
+
+/* Contact Section */
+    .contact .row {
+        display: flex;
+        margin-top: 2rem;
+        background-color: #FDF6DA;
+    }
+
+    .contact .row .map {
+        flex: 1 1 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contact .row form {
+        flex: 1 1 45rem;
+        padding: 5rem 2rem;
+        text-align: center;
+    }
+
+    .contact .row form .input-group {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: #b6895b;
+        border: 1px #b6895b;
+        padding: 2rem;
+    }
+
+    .contact .row form .input-group input {
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.7rem;
+        background: none;
+        color: #fff;
+    }
+
+    .contact .row form .btn {
+        margin-top: 3rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background-color: #F8EDE3;
+        cursor: pointer;
+    }
+
+/* Footer */
+footer {
+    background-color: none;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: #7F7158;
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: #FDF6DA;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: #F8EDE3;
+    font-weight: 700;
+}
+
+/* product section */
+.products .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.products .product-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
+}
+
+.products .product-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.products .product-icons a {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .product-icons a:hover {
+  background-color: #b6895b;
+  border: 1px solid #b6895b;
+}
+
+.products .product-image {
+  padding: 1rem 0;
+}
+
+.products .product-image img {
+  height: 25rem;
+}
+
+.products .product-content h3 {
+  font-size: 2rem;
+}
+
+.products .product-starts {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: #322518;
+}
+
+.products .product-starts .star-full {
+  fill: rgb(46, 35, 35);
+}
+
+.products .product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+/* laptop */
+@media (max-width:1200px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width:768px) {
+    html {
+        font-size: 62.5%;
+    }
+    #hamburger-menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+    .navbar .navbar-nav a {
+        color:#523d28;
+        display: block;
+        margin: 1.2rem;
+        padding: 0.5rem;
+        font-size: 1.8rem;
+    }
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+}
+
+/* handphone */
+@media (max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+}
